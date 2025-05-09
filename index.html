@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas Circle Interaction</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main>
+    <div class="main-content">
+      <div class="left-column">
+        <table class="info-table">
+          <tbody>
+            <tr><th>Complete Name:</th><td>Robi Luke Hernandez</td></tr>
+            <tr><th>Sex:</th><td>Male</td></tr>
+            <tr><th>Address:</th><td>La Purisima St. Goa C.S</td></tr>
+            <tr><th>Course, Year, and Section:</th><td>BSIT 2A</td></tr>
+            <tr><th>Name of School:</th><td>Partido State University</td></tr>
+            <tr><th>Semester and Academic Year:</th><td>2nd Semester, AY 2024–2025</td></tr>
+            <tr><th>Subject Code and Title:</th><td>PF2 - Event Driven Programming</td></tr>
+            <tr><th>Name of Subject Instructor:</th><td>Prof. Arjay Abio</td></tr>
+          </tbody>
+        </table>
+
+        <section class="instructions">
+          <h2>Instructions</h2>
+          <ul>
+            <li>Click on the canvas to create a circle.</li>
+            <li>Click on a circle to select it (highlighted in red).</li>
+            <li>Drag the selected circle to move it.</li>
+            <li>Use mouse wheel to resize the selected circle.</li>
+            <li>Press Delete key to remove the selected circle.</li>
+            <li>Use the controls below to set circle color and radius before creating a new circle.</li>
+            <li>Clear all circles using the button below.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="controls">
+          <label for="colorPicker">Circle Color:</label>
+          <input type="color" id="colorPicker" value="#0000ff" />
+          <label for="radiusInput">Radius:</label>
+          <input type="number" id="radiusInput" min="5" max="100" value="20" />
+          <button id="clearBtn">Clear All Circles</button>
+        </section>
+
+        <div class="canvas-container">
+          <canvas id="circleCanvas" width="600" height="400"></canvas>
+        </div>
+
+        <section class="circle-info">
+          <h2>Selected Circle Properties</h2>
+          <p id="circlePosition">Position: N/A</p>
+          <p id="circleRadius">Radius: N/A</p>
+          <p id="circleColor">Color: N/A</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
